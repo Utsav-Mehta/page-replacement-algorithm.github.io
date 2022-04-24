@@ -20,7 +20,7 @@ $(document).ready(function(){
                     datasets: [{
                         label: 'No. of Faults',
                         data: faults,
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        backgroundColor: '#bd963e',
                         borderColor: 'rgba(54, 162, 235, 1)',
                         borderWidth: 1
                     }]
@@ -148,26 +148,26 @@ $(document).ready(function(){
             var col=document.createElement("tr");
             tab.appendChild(col);
             var head=document.createElement("td");
-            head.innerHTML="<strong>No.</strong>";
+            head.innerHTML="<strong style='background:none'>No.</strong>";
             head.classList.add("tbl-header");
             col.appendChild(head);
             var head=document.createElement("td");
-            head.innerHTML="<strong>Page</strong>";
+            head.innerHTML="<strong style='background:none'>Page</strong>";
             head.classList.add("tbl-header");
             col.appendChild(head);
 
             for(var i=0;i<com[k];i++){
                 var head=document.createElement("td");
-                head.innerHTML="<strong>Frame</strong>";
+                head.innerHTML="<strong style='background:none'>Frame</strong>";
                 head.classList.add("tbl-header");
                 col.appendChild(head);
             }
             var head=document.createElement("td");
-            head.innerHTML="<strong>Hit</strong>";
+            head.innerHTML="<strong style='background:none'>Hit</strong>";
             head.classList.add("tbl-header");
             col.appendChild(head);
             var head=document.createElement("td");
-            head.innerHTML="<strong>Replaced Page</strong>";
+            head.innerHTML="<strong style='background:none'>Replaced Page</strong>";
             head.classList.add("tbl-header");
             col.appendChild(head);
 
@@ -258,7 +258,7 @@ $(document).ready(function(){
             ul.appendChild(li);
         }
 
-        document.querySelector("#btn1").innerHTML="<button><span>Show Graph</span></button>";
+        document.querySelector("#btn1").innerHTML="<button><span style='background-color:#827ffe'>Show Graph</span></button>";
         document.querySelector("#btn1 button").classList.add("btn1");
 
     });
