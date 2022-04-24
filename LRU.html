@@ -36,25 +36,24 @@
           <div class="profile">
             <br><br><br>
             <h2>Least Recently Used:</h2>
-            <p class="intro">This is one of the simplest page replacement algorithm.</p>
-            <p class="intro">In this algorithm, OS maintains a queue that keeps track of all the pages in the memory, where the oldest page is at front and the most recent one at back.</p>
-            <p class="intro">When the page is needed to be replaced, this algorithm swaps out the page that is at front as it has been there for the longest time.</p>
+            <p class="intro">In Least Recently Used (LRU) algorithm is a Greedy algorithm where the page to be replaced is least recently used.</p>
+            <p class="intro">The idea is based on locality of reference, the least recently used page is not likely.</p>
 
             <h2>Advantages:</h2>
             <ul>
-              <li>It is simple, easy to understand and implement.</li>
+              <li>Easy to choose page which has faulted and hasn’t been used for a long time.</li>
               <br>
-              <li>It has easy and fast execution</li>
+              <li>In this, we replace the page which is least recently used, thus free from Belady’s Anomaly.</li>
               <br>
             </ul>
             
             <h2>Disadvantages:</h2>
             <ul> 
-              <li>The process effectiveness is very low.</li>
+              <li>In LRU error detection is difficult as compared to other algorithms.</li>
               <br>
-              <li>Every frame needs to be taken account of.</li>
+              <li>It requires additional Data Structure to be implemented.</li>
               <br>
-              <li>With increase in no. of pages, no of page-faults also increases.</li>
+              <li>LRU are very costly to operate.</li>
             </ul>
 
             <img  width="40%" id="img1"  src="https://media.geeksforgeeks.org/wp-content/uploads/LRU-page-replacement.png" alt="image of fifo algo">
@@ -66,7 +65,7 @@
           <div style="text-align: center" class="contact-me">
 
             <h2 style="padding-bottom: 16px;">Simulation</h2>
-            <p class="contact-message">Click on the button below to try out the execution of FIFO algorithm</p>
+            <p class="contact-message">Click on the button below to try out the execution of LRU algorithm</p>
             <br><br>
             <a class="btn" href="./LRU-Sim.html">Simulate</a>
             
